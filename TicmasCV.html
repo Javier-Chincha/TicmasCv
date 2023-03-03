@@ -1,47 +1,113 @@
 <!DOCTYPE html>
+
 	<head>
+
 		<meta charset="utf-8">
+
+		<html lang="es.Es">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hello Bulma!</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+		<link rel="icon" type="image/svg" href="imagenes/briefcase-solid.svg"/>
+
+		<title>Ticmas CV</title>
+
+		<link rel="stylesheet" href="bulma/css/bulma.min.css">
+
 	</head>
 	
-	<body>
-		<nav class="navbar" role="navigation" aria-label="main navigation">
+	<body class="content has-background-light has-navbar-fixed-top">
+
+		<nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+
 			<div class="navbar-brand">
-				<a class="navbar-item" href="https://bulma.io">
-					<img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+
+				<a class="navbar-item">
+
+					<img src="imagenes/briefcase-solid.svg" alt="Icono" height="100" width="100" />
+
 				</a>
-				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
+
 			</div>
+
 			<div id="navbarBasicExample" class="navbar-menu">
-				<div class="navbar-start">
-					<a class="navbar-item">Home</a>
-					<a class="navbar-item">Documentation</a>
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link">More</a>
-						<div class="navbar-dropdown">
-							<a class="navbar-item">About</a>
-							<a class="navbar-item">Jobs</a>
-							<a class="navbar-item">Contact</a>
-							<hr class="navbar-divider">
-							<a class="navbar-item">Report an issue</a>
-						</div>
-					</div>
+
+					<a class="navbar-item" href="#inicio">Inicio</a>
+
+					<a class="navbar-item" href="#experiencia">Experiencia</a>
+
+					<a class="navbar-item" href="#habilidades">Habilidades</a>
+
+			</div>
+
+		</nav>
+
+		<div class="columns is-destop container"  id="inicio">
+			<div class="column is-one-fifth card has-background-light">
+				<div class="card-image container">
+					<figure class="image is-128x128">
+						<img class="image is-rounded" src="imagenes/96.jpg">
+					</figure>
 				</div>
-				<div class="navbar-end">
-					<div class="navbar-item">
-						<div class="buttons">
-							<a class="button is-primary"><strong>Sign up</strong></a>
-							<a class="button is-light">Loguearse</a>
-						</div>
+			</div>
+
+			<div class=" column card has-background-light">
+				<div class="card-content">
+					<div class="content">
+						<p class="title is-4">Información personal</p>
+						<p>Nombre : Morris Long</p>
+						<p>Email : morris.long@example.com</p>
+						<p>Cumpleaños : 8/3/1971</p>
+						<p>Dirección: 5583 W Dallas St</p>
+						<p>Número de telefono : (746) 661-6053</p>
 					</div>
 				</div>
 			</div>
-		<nav>
+
+		</div>
+
+		<div class="content container has-background-light">
+			<h2 id="experiencia">Experiencia</h2>
+			<p>
+				<h4>Desarrollador de Software</h4>
+				CYXUS, California, mayo 2020-junio 2021
+				<ul>
+					<li>Colaboración con el equipo de producción para conocer los requisitos y las especificaciones empresariales en torno a la gestión, análisis y riesgos.</li>
+					<li>Resolución de problemas complejos utilizando las últimas tecnologías móviles, web y en la nube.</li>
+					<li>Codificación eficaz de cambios y alteraciones de software en base a especificiones de diseño concretas.</li>
+					<li>Desarrollo y presentación de conclusiones y soluciones a las partes interesadas</li>
+				</ul>
+			</p>
+
+			<p>
+				<h4>Desarrollador de Software</h4>
+				Control PRO, Buenos Aires, septiembre 2018-abril 2020
+				<ul>
+					<li>Trabaje con éxito tanto a nivel independiente como en equipo.</li>
+					<li>Realicé tareas de pruebas y desarrollé funciones compplejas de forma rutinaria.</li>
+					<li>Implementación y actualización de módulos de aplicación bajo la dirección de desarrolladores de software senior.</li>
+					
+				</ul>
+			</p>
+		</div>
+
+		<div class="content container has-background-light">
+			<h2 id="habilidades">Habilidades</h2>
+			<ul>
+				<li>Html, Css y Javascript<span><progress class="progress is-small is-success" value="80" max="100">80%</progress></span></li>
+				<li>Bases de datos y Cache<span><progress class="progress is-small is-success" value="80" max="100">80%</progress></span></li>
+				<li>Arquitectura de Apps<span><progress class="progress is-small is-success" value="60" max="100">60%</progress></span></li>
+				<li>Programas de Edición<span><progress class="progress is-small is-success" value="40" max="100">40%</progress></span></li>
+			</ul>
+		</div>
+
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p><strong>Ticmas CV</strong> por Javier Chincha. El código fuente está en <a href="">este</a> repositorio de Github.</p>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
 	</body>
+	
 </html>
