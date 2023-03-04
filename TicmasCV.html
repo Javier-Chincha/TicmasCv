@@ -21,22 +21,21 @@
 		<nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
 
 			<div class="navbar-brand">
+				<div class="field is-grouped">
+					<a class="navbar-item">
 
-				<a class="navbar-item">
+						<img src="imagenes/briefcase-solid.svg" alt="Icono" height="50" width="50" />
 
-					<img src="imagenes/briefcase-solid.svg" alt="Icono" height="100" width="100" />
+					</a>
 
-				</a>
+					<a class="button is-text is-responsive" href="#inicio">Inicio</a>
 
-			</div>
+					<a class="button is-ghost is-responsive" href="#experiencia">Experiencia</a>
 
-			<div id="navbarBasicExample" class="navbar-menu">
+					<a class="button is-ghost is-responsive" href="#habilidades">Habilidades</a>
 
-					<a class="navbar-item" href="#inicio">Inicio</a>
-
-					<a class="navbar-item" href="#experiencia">Experiencia</a>
-
-					<a class="navbar-item" href="#habilidades">Habilidades</a>
+					<a class="button is-ghost is-responsive" href="#contacto">Contacto</a>
+				</div>
 
 			</div>
 
@@ -101,9 +100,41 @@
 			</ul>
 		</div>
 
+		<form class="container column is-three-fifths is-offset-one-fifth " id="formulario" method="post">
+			<h3 id="contacto">Contacto</h3>
+
+			<div class="field">
+				<label class="label">Nombre</label>
+				<div class="control">
+					<input class="input" type="text" placeholder="Ingrese su nombre" id="nombre">
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Asunto</label>
+				<div class="control">
+					<input class="input" type="text" placeholder="Ingrese el tema de interés" id="asunto">
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label">Email</label>
+				<div class="control has-icons-left has-icons-right">
+					<input class="input" type="email" placeholder="Ingrese su Email" id="email">
+				</div>
+			</div>
+
+			<div class="field is-grouped is-grouped-right">
+				<p class="control">
+					<a class="button is-primary" type="submit" id="enviar">Enviar</a>
+				</p>
+			</div>
+
+		</form>
+
 		<footer class="footer">
 			<div class="content has-text-centered">
-				<p><strong>Ticmas CV</strong> por Javier Chincha. El código fuente está en <a href="">este</a> repositorio de Github.</p>
+				<p><strong>Ticmas CV</strong> por Javier Chincha. El código fuente está en este <a href="https://github.com/Javier-Chincha/TicmasCv">repositorio</a>  de Github.</p>
 			</div>
 		</footer>
 
