@@ -28,7 +28,7 @@
 
 					</a>
 
-					<a class="button is-text is-responsive" href="#inicio">Inicio</a>
+					<a class="button is-ghost is-responsive" href="#inicio">Inicio</a>
 
 					<a class="button is-ghost is-responsive" href="#experiencia">Experiencia</a>
 
@@ -100,15 +100,8 @@
 			</ul>
 		</div>
 
-		<form class="container column is-three-fifths is-offset-one-fifth " id="formulario" method="post">
+		<form class="container column is-three-fifths is-offset-one-fifth " id="formulario" method="post" action="noexiste.html">
 			<h3 id="contacto">Contacto</h3>
-
-			<div class="field">
-				<label class="label">Nombre</label>
-				<div class="control">
-					<input class="input" type="text" placeholder="Ingrese su nombre" id="nombre">
-				</div>
-			</div>
 
 			<div class="field">
 				<label class="label">Asunto</label>
@@ -124,9 +117,11 @@
 				</div>
 			</div>
 
+			<textarea class="textarea" placeholder="Mensaje" id="mensaje"></textarea>
+
 			<div class="field is-grouped is-grouped-right">
 				<p class="control">
-					<a class="button is-primary" type="submit" id="enviar">Enviar</a>
+					<a class="button is-primary" type="submit" id="enviar" onclick="hizoClick()">Enviar</a>
 				</p>
 			</div>
 
